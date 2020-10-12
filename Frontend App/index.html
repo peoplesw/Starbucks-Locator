@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Starbucks Locator</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Browser Tab Coffee Icon -->
+    <link rel="shortcut icon" href="assets/coffee-cup.png" type="image/x-icon">
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="style/style.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+</head>
+<body>
+    <!-- Title -->
+    <div class="title">Starbucks Locator <img src="assets/coffee-cup.png" id="coffee-cup"></div>
+    <!-- Search Container -->
+    <div class="search-container">
+        <div class="search">
+            <input id="search-input" type="text" placeholder="zip code" onkeyup="onEnter(event)">
+            <i class="fas fa-search fa-flip-horizontal" onclick="getStores()"></i>
+        </div>
+    </div>
+
+    <!-- Stores List Container -->
+    <div class="stores-list-container">
+        <!-- Stores List -->
+        <div class="stores-list">
+            <div class="intro">
+                <span class="enter-zip">Enter Zip Code</span>
+                <span class="find-stores">Find Stores Near You!</span>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- MAP -->
+    <div id="map"></div>
+
+
+
+<!-- Local JavaScript file -->
+<script src="js/script.js"></script>
+<!-- Imports Google Maps API -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEqByweXvCY6Q3SKe_o9QSyDEtIIlZ81M&callback=initMap&libraries=&v=weekly"></script>
+</body>
+</html>

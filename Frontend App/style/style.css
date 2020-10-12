@@ -1,0 +1,225 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#map {
+    height: 100vh;
+}
+
+.title {
+    font-size: 74px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    position: absolute;
+    z-index: 10;
+    top: 80px;
+    left: 100px;
+}
+
+/* Container */
+.search-container {
+    position: absolute;
+    z-index: 10;
+    top: 185px;
+    left: 100px;
+    border: 1px solid #979797;
+    border-radius: 44px;
+    background-color: #454E53;
+    height: 50px;
+    width: 350px;
+} 
+
+/* Sub Container */
+.search {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Input */
+#search-input {
+    width: 275px;
+    background-color: transparent;
+    color: white;
+    font-size: 25px;
+    border: none;
+    flex-grow: 1;
+    padding-right: 9px;
+}
+
+#search-input:focus {
+    outline: none;
+}
+
+#search-input::placeholder {
+    color: white;
+    opacity: 100%;
+}
+
+i.fa-search {
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+.stores-list-container {
+    position: absolute;
+    z-index: 10;
+    top: 255px;
+    left: 100px;
+    bottom: 20px;
+    width: 350px;
+    background-color: white; 
+    border-radius: 30px;
+    display: flex;
+    overflow: hidden;
+}
+
+.stores-list {
+    flex-grow: 1;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow: scroll;
+}
+
+.store-list-item-container {
+    height: 90px;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: background-color .15s; 
+    cursor: pointer;
+}
+
+.store-list-item-container:hover {
+    background-color: #cccccc87;
+}
+
+.store-list-item-info-container {
+    flex: 1;
+}
+
+.store-list-item-address-container {
+    font-size: 18px;
+    color: #514c4c;
+}
+
+.store-list-item-phone-number-container {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #b5adad;
+}
+
+.store-list-item-number-container {
+    height: 20px;
+    width: 20px;
+    background-color: #454E53;
+    color: lightgrey;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+hr {
+    height: 2px;
+    border: none;
+    background-color: rgba(0,0,0, .15);
+}
+
+/* Info-Window Styles */
+.store-info-window {
+    min-width: 250px;
+    font-size: 16px; 
+    padding: 4px;
+}
+
+.store-info-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, .87)
+}
+
+.store-info-open-status {
+    margin-top: 6px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ccc;
+    color: rgba(0,0,0, .57);
+}
+
+.store-info-address, .store-info-phone {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: row;
+}
+
+.store-info-phone a, .store-info-address {
+    text-decoration: none;
+    color: #514c4c;
+}
+
+.icon {
+    font-size: 12px;
+    width: 26px;
+    height: 26px;
+    background-color: #1985A1;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.intro {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+span.enter-zip {
+    color: #514c4c;
+    font-size: 22px;
+}
+
+span.find-stores {
+    color: #1985a1;
+    font-size: 20px;
+}
+
+.no-stores-found {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #514c4c;
+    font-size: 20px;
+}
+
+#coffee-cup {
+    width: 65px;
+    cursor: pointer;
+}
